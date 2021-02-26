@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    scroll-behavior: smooth;
+    font-family: 'Signika', sans-serif, normal;
+    font-size: 20px;
+}
+
+
+.flex {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.column {
+    flex-direction: column;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1{
+
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 115px;
+    line-height: 138px;
+    color: #CC2626;
+}
+
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Teko';
+    font-size: 48px;
+    line-height: 69px;
+    color: #CC2626;
+}
+
+h3{
+
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 52px;
+    color: #000000;
+
+}
+
+span{
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 69px;
+    color: white; text-shadow: #CC2626 0.1em 0.1em 0.2em
+   
+
+}
+
+
+
+
+/* -------------------------header----------------------------- */
+
+nav{
+
+    justify-content: start;
+    align-items:flex-start ;
+    margin-top: 10px;
+    gap:70px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+
+    
+
+}
+
+
+
+/* --------------------------------------section1-------------------------------- */
+
+.caroussel {
+    justify-content: center;
+    margin: 0px 0px 45px 0px;
+    
+}
+
+
+/* Keyframes */
+
+@keyframes AutoSlide {
+	0% {
+		left: 0px; /*1ère image*/
+	}
+	15% {
+		left: 0px; /*idem pour attente*/
+	}
+	35% {
+		left: -150px; /*2ème image*/
+	}
+	50% {
+		left: -150px; /*idem pour attente*/
+	}
+	
+
+	100% {
+		left: 0px; /*1ère image*/
+	}
+}
+
+
+#slideshow {
+	position: relative;
+	width: 1192px;
+	height: 593px;
+	margin:  20px auto;
+	overflow: hidden;
+    position: absolute;
+
+}
+#sContent li {
+	display: inline;
+}
+
+
+
+#sContent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 450px;
+	margin: 0;            
+	padding: 0;
+	
+	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+
+
+/* --------------------------------------section2-------------------------- */
+
+
+.s2{
+    justify-content: space-around;
+    align-items: center;
+    background: #CC2626;
+    width: 1429px;
+    height: 400px;
+
+
+}
+
+
+
+.legende1, 
+.legende2,
+.legende3{
+    width: 153px;
+    height: 150px;
+    left: 986px;
+    top: 1248px;
+    font-family: Teko;
+    font-style: normal;
+    font-weight: normal;
+     font-size: 36px;
+    line-height: 52px; 
+    text-align: center;
+    color: #000000;
+}
+
+
+
+
+/* --------------------------------------------section3------------------------------ */
+
+.s3{
+    justify-content: center;
+    margin-top: 100px;
+    gap: 5px;
+
+}
+
+
+.enfancePhoto{
+    width: 458px;
+    height: 519px;
+    left: 330px;
+    top: 1860px;
+
+}
+
+
+.enfance{
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    width: 334px;
+    height: 423px;
+    left: 788px;
+    top: 2137px;
+    background: rgba(229, 229, 229, 0.3);
+
+
+}
+
+
+
+/* -------------------------------------section4-------------------------------------------- */
+
+
+.s4{
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 5px;
+}
+
+
+
+
+.diplomePhoto{
+    
+    width: 458px;
+    height: 519px;
+    left: 619px;
+    top: 3003.5px;
+   
+
+
+}
+
+
+.diplome{
+width: 325px;
+height: 462px;
+left: 294px;
+top: 3311px;
+font-family: 'Signika';
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+background: #F8F8F8;
+
+}
+
+
+/* <!-- -------------------------------------------------------s5------------------------------------------------------ --> */
+
+
+
+
+
+.s5{
+
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background:url('pictures/Rectangle24.png');
+
+
+
+}
+
+
+.box1, .box2,
+.box3{
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+
+
+/* footer */
+
+.formulaire{
+
+    padding-left: 10px;
+    flex-direction: row;
+
+
+}
+
+footer{
+    text-align: center;
+}
